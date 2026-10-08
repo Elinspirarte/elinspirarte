@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Cargar datos de la galería
-    const galleryGrid = document.getElementById('gallery-grid');
+    const fullGalleryGrid = document.getElementById('gallery-grid');
+    const recentGalleryGrid = document.getElementById('recent-gallery-grid');
     
     // Variables para el Modal
     const modal = document.getElementById('craft-modal');
@@ -31,8 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalDesc = document.getElementById('modal-desc');
 
     // Función para renderizar la galería
-    const renderGallery = (items) => {
-        galleryGrid.innerHTML = '';
+    const renderGallery = (items, targetGrid) => {
+        if (!targetGrid) return;
+        
+        targetGrid.innerHTML = '';
         
         items.forEach(item => {
             // Crear el elemento de la tarjeta
@@ -52,12 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Evento para abrir el modal
             card.addEventListener('click', () => openModal(item));
             
-            galleryGrid.appendChild(card);
+            targetGrid.appendChild(card);
         });
     };
 
     // Función para abrir el modal
     const openModal = (item) => {
+        if(!modal) return;
         modalImg.src = item.imagen;
         modalImg.alt = item.titulo;
         modalTitle.textContent = item.titulo;
@@ -68,21 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden'; // Prevenir scroll al abrir modal
     };
 
-    // Cerrar modal
-    closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-
-    // Cerrar modal al hacer clic fuera del contenido
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
+    if(closeBtn) {
+        // Cerrar modal
+        closeBtn.addEventListener('click', () => {
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
-        }
-    });
+        });
+    }
 
-    // Fetch de los datos (simulado con fetch local)
+    if(modal) {
+        // Cerrar modal al hacer clic fuera del contenido
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+
+    // Fetch de los datos
     fetch('data/artesanias.json')
         .then(response => {
             if (!response.ok) {
@@ -91,10 +99,18 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            renderGallery(data);
+            if (fullGalleryGrid) {
+                renderGallery(data, fullGalleryGrid);
+            }
+            if (recentGalleryGrid) {
+                // Solo las 3 más recientes
+                const recentData = data.slice(0, 3);
+                renderGallery(recentData, recentGalleryGrid);
+            }
         })
         .catch(error => {
             console.error('Error:', error);
-            galleryGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No se pudieron cargar las artesanías en este momento.</p>';
+            if (fullGalleryGrid) fullGalleryGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No se pudieron cargar las artesanías en este momento.</p>';
+            if (recentGalleryGrid) recentGalleryGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No se pudieron cargar las artesanías en este momento.</p>';
         });
 });

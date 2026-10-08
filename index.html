@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elinspirarte | Arte y Artesanías por Eliana</title>
+    <title>Elinspirarte | Arte y Artesanías por Eliana Valenzuela Gálvez</title>
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +16,13 @@
     <!-- Navegación -->
     <header class="header">
         <div class="container nav-container">
-            <a href="#inicio" class="logo-link"><img src="assets/images/logo.jpg" alt="ElinspirArte Logo" class="logo-img"></a>
+            <a href="index.html#inicio" class="logo-link"><img src="assets/images/logo.jpg" alt="ElinspirArte Logo" class="logo-img"></a>
             <button class="mobile-menu-btn" aria-label="Abrir menú">&#9776;</button>
             <nav class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#galeria">Galería</a>
-                <a href="#quien-soy">Quién Soy</a>
-                <a href="#contacto">Contacto</a>
+                <a href="index.html#inicio">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="index.html#quien-soy">Quién Soy</a>
+                <a href="index.html#contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -32,20 +32,24 @@
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Donde la inspiración se hace arte</h1>
-                <p>Bienvenidos a Elinspirarte. Creaciones únicas hechas a mano con amor y dedicación por Eliana.</p>
-                <a href="#galeria" class="btn btn-primary">Ver Galería</a>
+                <p>Bienvenidos a Elinspirarte. Creaciones únicas hechas a mano con amor y dedicación por Eliana Valenzuela Gálvez.</p>
+                <a href="galeria.html" class="btn btn-primary">Ver Galería</a>
             </div>
         </section>
 
-        <!-- Sección Galería -->
-        <section id="galeria" class="section">
+        <!-- Sección Galería Reciente -->
+        <section id="galeria-reciente" class="section">
             <div class="container">
-                <h2 class="section-title">Mi Galería</h2>
-                <p class="section-subtitle">Explora mis últimas creaciones. Haz clic en cada pieza para ver más detalles.</p>
+                <h2 class="section-title">Últimas Creaciones</h2>
+                <p class="section-subtitle">Un vistazo a mis obras más recientes. Haz clic en cada pieza para ver más detalles.</p>
                 
                 <!-- Grid de la galería cargado dinámicamente -->
-                <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-grid" id="recent-gallery-grid">
                     <!-- Los items se cargarán por JS -->
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="galeria.html" class="btn btn-primary">Ver Galería Completa</a>
                 </div>
             </div>
         </section>
@@ -55,18 +59,19 @@
             <div class="container about-container">
                 <div class="about-image">
                     <!-- Imagen de marcador de posición (placeholder) para Eliana -->
-                    <img src="https://images.unsplash.com/photo-1516962126636-27ad087061cc?q=80&w=800&auto=format&fit=crop" alt="Eliana en su taller">
+                    <img src="https://images.unsplash.com/photo-1516962126636-27ad087061cc?q=80&w=800&auto=format&fit=crop" alt="Eliana Valenzuela Gálvez en su taller">
                 </div>
                 <div class="about-content">
                     <h2 class="section-title text-left">Sobre Mí</h2>
-                    <h3>¡Hola! Soy Eliana</h3>
-                    <p>Soy una apasionada de las artesanías y el trabajo manual. <strong>Elinspirarte</strong> nació como un juego de palabras entre mi nombre, la inspiración que encuentro en la naturaleza y mi amor por el arte.</p>
-                    <p>En mi taller, cada pieza es única. Trabajo principalmente con cerámica, macramé y pintura (puedes personalizar este texto según las técnicas reales). Disfruto explorar texturas y colores que transmitan calidez a los hogares.</p>
+                    <h3>¡Hola! Soy Eliana Valenzuela Gálvez</h3>
+                    <p>Durante más de 30 años me dediqué a la educación, la formación y la docencia como profesora de artes, orientadora y psicopedagoga. A lo largo de mi trayectoria, el arte siempre ha sido mi mayor refugio y pasión.</p>
+                    <p>Hoy, en esta nueva etapa, <strong>Elinspirarte</strong> nace de mi profundo deseo de entrelazar esa pasión con la sanación mental, la guía y la espiritualidad. Creo fervientemente en el poder del arte como terapia para sanar el alma.</p>
+                    <p>En mi taller, cada pieza que creo lleva una intención, un propósito de luz y bienestar. Es un espacio donde la técnica se funde con la emoción.</p>
                     <div class="techniques">
+                        <span class="badge">Arte Terapia</span>
                         <span class="badge">Cerámica</span>
-                        <span class="badge">Macramé</span>
                         <span class="badge">Pintura</span>
-                        <span class="badge">Tejido</span>
+                        <span class="badge">Espiritualidad</span>
                     </div>
                 </div>
             </div>
@@ -76,7 +81,7 @@
         <section id="contacto" class="section">
             <div class="container">
                 <h2 class="section-title">Contáctame</h2>
-                <p class="section-subtitle">¿Te interesa alguna pieza o quieres un encargo personalizado? ¡Escríbeme!</p>
+                <p class="section-subtitle">¿Te interesa alguna pieza, una obra personalizada o quieres saber más sobre arte como terapia? ¡Escríbeme!</p>
                 
                 <div class="contact-wrapper">
                     <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado! (Esto es una demostración)');">
@@ -131,9 +136,9 @@
                 </div>
                 <div class="modal-info">
                     <h2 id="modal-title">Título</h2>
-                    <p class="modal-technique"><strong>Técnica:</strong> <span id="modal-tech"></span></p>
+                    <p class="modal-technique"><strong>Técnica / Propósito:</strong> <span id="modal-tech"></span></p>
                     <p id="modal-desc" class="modal-description">Descripción detallada</p>
-                    <a href="#contacto" class="btn btn-primary btn-consult" onclick="document.getElementById('craft-modal').classList.remove('active')">Consultar por esta pieza</a>
+                    <a href="index.html#contacto" class="btn btn-primary btn-consult" onclick="document.getElementById('craft-modal').classList.remove('active')">Consultar por esta pieza</a>
                 </div>
             </div>
         </div>
