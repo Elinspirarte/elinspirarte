@@ -1,44 +1,65 @@
 [
     {
         "id": 1,
-        "titulo": "Jarrón Tierra Cota",
-        "tecnica": "Cerámica modelada a mano",
-        "descripcion": "Un jarrón rústico de arcilla roja, ideal para flores secas o como centro de mesa. Horneado a alta temperatura para asegurar su durabilidad. Inspirado en los colores de la naturaleza.",
-        "imagen": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Abstracto en Cálidos",
+        "tecnica": "Acrílico con espátula sobre lienzo",
+        "descripcion": "Una composición abstracta que evoca la fuerza vital y la energía interior. Los tonos tierra, rojos y naranjas representan la pasión y el arraigo, invitando a la reflexión y al despertar emocional.",
+        "imagen": "assets/images/galeria/obra-1.jpg"
     },
     {
         "id": 2,
-        "titulo": "Tapiz Bohemio",
-        "tecnica": "Macramé con hilo de algodón",
-        "descripcion": "Tapiz decorativo de pared tejido a mano en técnica de macramé. Utiliza hilo de algodón crudo 100% natural, montado sobre una rama de árbol tratada. Perfecto para dar calidez a cualquier ambiente.",
-        "imagen": "https://images.unsplash.com/photo-1522758971460-1d21eed7dc1d?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Amapolas en Relieve",
+        "tecnica": "Pintura texturizada",
+        "descripcion": "Vibrantes amapolas rojas que emergen del lienzo. El rojo intenso simboliza la vitalidad y la alegría de vivir, mientras que la textura táctil busca conectar los sentidos físicos con el plano emocional.",
+        "imagen": "assets/images/galeria/obra-2.jpg"
     },
     {
         "id": 3,
-        "titulo": "Tazas de Café 'Amanecer'",
-        "tecnica": "Cerámica esmaltada",
-        "descripcion": "Set de dos tazas de café elaboradas en torno alfarero con esmalte reactivo en tonos cálidos. Cada pieza es única, presentando variaciones naturales que las hacen especiales para disfrutar tus mañanas.",
-        "imagen": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Calas sobre Carmín",
+        "tecnica": "Pintura texturizada con detalles dorados",
+        "descripcion": "Dos calas entrelazadas sobre un fondo profundo. Las calas representan la pureza y el renacimiento. Esta pieza está pensada para aportar elegancia y serenidad a cualquier espacio de meditación o descanso.",
+        "imagen": "assets/images/galeria/obra-3.jpg"
     },
     {
         "id": 4,
-        "titulo": "Cuadro Abstracto Floral",
-        "tecnica": "Acrílico sobre lienzo",
-        "descripcion": "Pintura original con espátula y pincel. Representa la vitalidad de un jardín en primavera con texturas pronunciadas y colores vibrantes. Medidas: 40x50 cm.",
-        "imagen": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Calas Clásicas",
+        "tecnica": "Óleo sobre lienzo",
+        "descripcion": "Una representación suave y clásica de un ramo de calas blancas. El verde y el blanco se funden para transmitir paz mental, equilibrio y la frescura de un nuevo comienzo.",
+        "imagen": "assets/images/galeria/obra-4.jpg"
     },
     {
         "id": 5,
-        "titulo": "Cuenco Minimalista",
-        "tecnica": "Cerámica blanca",
-        "descripcion": "Cuenco de líneas puras y diseño escandinavo. Ideal para guardar joyas, llaves o simplemente como objeto decorativo. Esmalte mate sedoso al tacto.",
-        "imagen": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Narcisos en Relieve",
+        "tecnica": "Modelado 3D y pintura",
+        "descripcion": "Pequeño cuadro con narcisos esculpidos. Las flores de primavera siempre nos recuerdan que después del invierno interior florece la luz. Ideal para inspirar esperanza.",
+        "imagen": "assets/images/galeria/obra-5.jpg"
     },
     {
         "id": 6,
-        "titulo": "Portamacetas Colgante",
-        "tecnica": "Macramé teñido artesanalmente",
-        "descripcion": "Soporte para plantas realizado en macramé y teñido a mano con tintes naturales a base de cáscara de nuez. Soporta macetas de hasta 20 cm de diámetro.",
-        "imagen": "https://images.unsplash.com/photo-1522758971460-1d21eed7dc1d?q=80&w=800&auto=format&fit=crop"
+        "titulo": "Tulipanes Naranjas",
+        "tecnica": "Modelado 3D y pintura",
+        "descripcion": "Tulipanes vibrantes en relieve. El color naranja está íntimamente ligado a la creatividad y al entusiasmo. Una obra pequeña pero llena de energía sanadora.",
+        "imagen": "assets/images/galeria/obra-6.jpg"
+    },
+    {
+        "id": 7,
+        "titulo": "Hortensia Púrpura",
+        "tecnica": "Modelado 3D y pintura",
+        "descripcion": "Hortensia en relieve detallado. El color púrpura conecta directamente con la espiritualidad, la intuición y la transmutación de energías. Perfecta para un rincón de introspección.",
+        "imagen": "assets/images/galeria/obra-7.jpg"
+    },
+    {
+        "id": 8,
+        "titulo": "La Puerta Rústica",
+        "tecnica": "Acrílico sobre lienzo",
+        "descripcion": "Una escena costumbrista que muestra una antigua puerta de madera flanqueada por macetas floridas. Simboliza las puertas que decidimos abrir en nuestro interior hacia nuevos caminos.",
+        "imagen": "assets/images/galeria/obra-8.jpg"
+    },
+    {
+        "id": 9,
+        "titulo": "Llamando a la Puerta",
+        "tecnica": "Óleo sobre lienzo",
+        "descripcion": "Una niña tocando a una puerta verde azulada. Esta obra habla de nuestro niño interior, la curiosidad y el valor de buscar nuevas oportunidades. Una pieza profundamente emocional.",
+        "imagen": "assets/images/galeria/obra-9.jpg"
     }
 ]
