@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "titulo": "Jarrón Tierra Cota",
+        "tecnica": "Cerámica modelada a mano",
+        "descripcion": "Un jarrón rústico de arcilla roja, ideal para flores secas o como centro de mesa. Horneado a alta temperatura para asegurar su durabilidad. Inspirado en los colores de la naturaleza.",
+        "imagen": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 2,
+        "titulo": "Tapiz Bohemio",
+        "tecnica": "Macramé con hilo de algodón",
+        "descripcion": "Tapiz decorativo de pared tejido a mano en técnica de macramé. Utiliza hilo de algodón crudo 100% natural, montado sobre una rama de árbol tratada. Perfecto para dar calidez a cualquier ambiente.",
+        "imagen": "https://images.unsplash.com/photo-1522758971460-1d21eed7dc1d?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 3,
+        "titulo": "Tazas de Café 'Amanecer'",
+        "tecnica": "Cerámica esmaltada",
+        "descripcion": "Set de dos tazas de café elaboradas en torno alfarero con esmalte reactivo en tonos cálidos. Cada pieza es única, presentando variaciones naturales que las hacen especiales para disfrutar tus mañanas.",
+        "imagen": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 4,
+        "titulo": "Cuadro Abstracto Floral",
+        "tecnica": "Acrílico sobre lienzo",
+        "descripcion": "Pintura original con espátula y pincel. Representa la vitalidad de un jardín en primavera con texturas pronunciadas y colores vibrantes. Medidas: 40x50 cm.",
+        "imagen": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 5,
+        "titulo": "Cuenco Minimalista",
+        "tecnica": "Cerámica blanca",
+        "descripcion": "Cuenco de líneas puras y diseño escandinavo. Ideal para guardar joyas, llaves o simplemente como objeto decorativo. Esmalte mate sedoso al tacto.",
+        "imagen": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 6,
+        "titulo": "Portamacetas Colgante",
+        "tecnica": "Macramé teñido artesanalmente",
+        "descripcion": "Soporte para plantas realizado en macramé y teñido a mano con tintes naturales a base de cáscara de nuez. Soporta macetas de hasta 20 cm de diámetro.",
+        "imagen": "https://images.unsplash.com/photo-1522758971460-1d21eed7dc1d?q=80&w=800&auto=format&fit=crop"
+    }
+]
